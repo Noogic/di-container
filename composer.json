@@ -1,0 +1,42 @@
+{
+    "name": "noogic/di-container",
+    "description": "A custom DI Container",
+    "keywords": [
+        "noogic",
+        "di-container"
+    ],
+    "homepage": "https://github.com/noogic/di-container",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Joan Morell",
+            "email": "hi@joanmorell.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Noogic\\DiContainer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Noogic\\DiContainer\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
